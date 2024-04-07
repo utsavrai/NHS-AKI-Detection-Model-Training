@@ -1,0 +1,33 @@
+Instructions
+============
+
+Prerequisites:
+---------------
+1. Install package from requirements.txt
+
+Running train.py:
+-----------------
+1. Navigate to the directory containing the train.py file and training.csv.
+3. Run the script using the command: python3 train.py
+   - The script will read the training data, train the model, and save the model as 'rf_model.joblib'.
+   - Ensure the training data file is named 'training.csv' or modify the script accordingly.
+
+Running test_utils.py (Unit Tests):
+-----------------------------------
+1. Ensure you are in the directory containing the test_utils.py file.
+2. The unit tests in test_utils.py are designed to test functions within utils.py.
+3. Run the tests using the command: python3 -m unittest test_utils.py
+   - This will execute all the test cases defined in test_utils.py.
+   - Ensure that test_utils.py has appropriate test cases written for the functions in utils.py.
+
+Running model.py
+----------------
+
+Docker Method:
+1. Ensure you are in the directory containing the Dockerfile
+2. Run docker build -t aki .
+3. docker run -v ${PWD}:/data aki
+
+Local Method:
+1. Ensure you are in the directory containing the model.py
+2. Run the script using the command: python3 model.py
